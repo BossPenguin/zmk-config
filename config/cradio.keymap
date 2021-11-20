@@ -171,7 +171,7 @@
             bindings = <
             &kp TAB    &kp Q  &kp W  &kp E      &kp R           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
             &kp LSHFT  &kp A  &kp S  &kp D      &kp F           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0 
-            &bt LCTRL  &bt Z  &bt X  &kp C      &kp V           &kp K         &kp M         &kp J         &kp I         &kp F9   
+            &kp LCTRL  &kp Z  &kp X  &kp C      &kp V           &kp K         &kp M         &kp J         &kp I         &kp F9   
                                      &kp SPACE  &kp T           &tog 0        &kp F5 
             >;
 
