@@ -109,41 +109,73 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
-		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
-		>;
-		};
+       		default_layer
+        {
+        
+            //  |  Q  |  W  |  F  |  P  |  G    |         |  J   |  L  |  U   |  Y   | Ralt  |
+            //  |  A  |  R  |  S  |  T  |  D    |         |  H   |  N  |  E   |  I   |  O    |
+            //  |  Z  |  X  |  C  |  V  |  B    |         |  K   |  M  | Lgui | Lalt | Lctrl |
+            //                    |Lshft|TG(num)|         |TG(fn)|space|
+                
+            bindings = <
+            &kp Q &kp W &kp F &kp P &kp G                  &kp J &kp L  &kp U &kp Y &kp RALT 
+            &kp A &kp R &kp S &kp T &kp D                  &kp H &kp N &kp E &kp I &kp O
+            &kp Z &kp X &kp C &kp V &kp B                  &kp K &kp M  &kp LGUI &kp LALT &kp LCTRL
+                            &kp LSHFT &tog 1               &tog 2 &kp SPACE
+            >;
 
-       		left_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
-		>;
-		};
-		
-		right_layer {
-		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
-		>;
-		};	
-		
-		tri_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
-		>;
-		};	
+        };
+
+        left_layer
+        {
+            
+            //  |  GRAVE  |  NUMBER_7  |  NUMBER_8  |  NUMBER_9  | TRANS |         | TRANS | TRANS | TRANS | MINUS | EQUAL |
+            //  |  TRANS  |  NUMBER_4  |  NUMBER_5  |  NUMBER_6  | TRANS |         | TRANS | LBKT | RBKT | SEMI | SQT |
+            //  |  Lshft  |  NUMBER_1  |  NUMBER_2  |  NUMBER_3  | TRANS |         | TRANS | TRANS | Lgui | Lalt | Lctrl |
+            //                                            |NUMBER_0|TRANS|         |TG(0)|space|
+                
+            bindings = <
+            &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans             &trans  &trans    &trans    &kp MINUS  &kp EQUAL 
+            &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans             &trans  &kp LBKT  &kp RBKT  &kp SEMI   &kp SQT 
+            &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans             &trans  &trans    &kp LGUI  &kp LALT   &kp LCTRL 
+                                                   &kp NUMBER_0  &trans             &tog 0  &kp SPACE
+            >;
+
+        };
+        
+        right_layer
+        {
+        
+            //  |  F1   |  F2   |  F3   |  F4   |  F5   |    |  F16  |  F17  |  F18  |  F19  | F20   |
+            //  |  F6   |  F7   |  F8   |  F9   |  F10  |    |  F21  |  F22  |  F23  |  F24  | TRANS |
+            //  |  F11  |  F12  |  F13  |  F14  |  F15  |    | TRANS | TRANS | Lgui  | Lalt  | Lctrl |
+            //                          | shift | TRANS |    | TG(0) | TRANS |
+                
+            bindings = <
+            &kp F1   &kp F2   &kp F3   &kp F4     &kp F5          &kp F16  &kp F17  &kp F18   &kp F19   &kp F20 
+            &kp F6   &kp F7   &kp F8   &kp F9     &kp F10         &kp F21  &kp F22  &kp F23   &kp F24   &trans
+            &kp F11  &kp F12  &kp F13  &kp F14    &kp F15         &trans   &trans   &kp LGUI  &kp LALT  &kp LCTRL
+                                       &kp LSHFT  &trans          &tog 0   &trans
+            >;
+
+        };  
+        
+        tri_layer 
+        {
+        
+            //  | TAB |  Q  |  W  |  E  |  R  |         | NUMBER_1 | NUMBER_2 | NUMBER_3 | NUMBER_4 | NUMBER_5 |
+            //  |LSHFT|  A  |  S  |  D  |  F  |         | NUMBER_6 | NUMBER_7 | NUMBER_8 | NUMBER_9 | NUMBER_0 |
+            //  |LCTRL|  Z  |  X  |  C  |  V  |         |  K   |  M  |  J  |  I  | F9 |
+            //                    |SPACE|  T  |         |TG(0)| F5 |
+                
+            bindings = <
+            &kp TAB    &kp Q  &kp W  &kp E      &kp R           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
+            &kp LSHFT  &kp A  &kp S  &kp D      &kp F           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0 
+            &bt LCTRL  &bt Z  &bt X  &kp C      &kp V           &kp K         &kp M         &kp J         &kp I         &kp F9   
+                                     &kp SPACE  &kp T           &tog 0        &kp F5 
+            >;
+
+        };  	
         
 	};
 };
