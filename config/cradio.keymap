@@ -46,14 +46,14 @@
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
-        /*combo_previous
+        combo_previous
         {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp C_PREVIOUS>;
         }
 
-        combo_NEXT
+        /*combo_NEXT
         {
             timeout-ms = <50>;
             key-positions = <13 14>;
