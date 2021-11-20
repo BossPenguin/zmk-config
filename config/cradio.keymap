@@ -129,16 +129,16 @@
         left_layer
         {
             
-            //  |  GRAVE  |  NUMBER_7  |  NUMBER_8  |  NUMBER_9  | TRANS |         | TRANS | TRANS | TRANS | MINUS | EQUAL |
-            //  |  TRANS  |  NUMBER_4  |  NUMBER_5  |  NUMBER_6  | TRANS |         | TRANS | LBKT | RBKT | SEMI | SQT |
-            //  |  Lshft  |  NUMBER_1  |  NUMBER_2  |  NUMBER_3  | TRANS |         | TRANS | TRANS | Lgui | Lalt | Lctrl |
-            //                                            |NUMBER_0|TRANS|         |TG(0)|space|
+            //  |  GRAVE  |  NUMBER_7  |  NUMBER_8  |  NUMBER_9  | TRANS |         | TRANS | TRANS | Bslh  | MINUS  | EQUAL |
+            //  |  TRANS  |  NUMBER_4  |  NUMBER_5  |  NUMBER_6  | TRANS |         | TRANS | LBKT  | RBKT  | SEMI   | SQT   |
+            //  |  Lshft  |  NUMBER_1  |  NUMBER_2  |  NUMBER_3  | TRANS |         | TRANS | TRANS | COMMA | PERIOD | FSLH  |
+            //                                      |  NUMBER_0  | TG(3) |         |TG(0)|space|
                 
             bindings = <
-            &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans             &trans  &trans    &trans    &kp MINUS  &kp EQUAL 
-            &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans             &trans  &kp LBKT  &kp RBKT  &kp SEMI   &kp SQT 
-            &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans             &trans  &trans    &kp LGUI  &kp LALT   &kp LCTRL 
-                                                   &kp NUMBER_0  &trans             &tog 0  &kp SPACE
+            &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans             &trans  &trans    &kp BSLH   &kp MINUS   &kp EQUAL 
+            &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans             &trans  &kp LBKT  &kp RBKT   &kp SEMI    &kp SQT 
+            &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans             &trans  &trans    &kp COMMA  &kp PERIOD  &kp FSLH 
+                                                   &kp NUMBER_0  &tog 3             &tog 0  &kp SPACE
             >;
 
         };
@@ -149,13 +149,13 @@
             //  |  F1   |  F2   |  F3   |  F4   |  F5   |    |  F16  |  F17  |  F18  |  F19  | F20   |
             //  |  F6   |  F7   |  F8   |  F9   |  F10  |    |  F21  |  F22  |  F23  |  F24  | TRANS |
             //  |  F11  |  F12  |  F13  |  F14  |  F15  |    | TRANS | TRANS | Lgui  | Lalt  | Lctrl |
-            //                          | shift | TRANS |    | TG(0) | TRANS |
+            //                          | shift | TG(3) |    | TG(0) | TRANS |
                 
             bindings = <
             &kp F1   &kp F2   &kp F3   &kp F4     &kp F5          &kp F16  &kp F17  &kp F18   &kp F19   &kp F20 
             &kp F6   &kp F7   &kp F8   &kp F9     &kp F10         &kp F21  &kp F22  &kp F23   &kp F24   &trans
             &kp F11  &kp F12  &kp F13  &kp F14    &kp F15         &trans   &trans   &kp LGUI  &kp LALT  &kp LCTRL
-                                       &kp LSHFT  &trans          &tog 0   &trans
+                                       &kp LSHFT  &tog 3          &tog 0   &trans
             >;
 
         };  
