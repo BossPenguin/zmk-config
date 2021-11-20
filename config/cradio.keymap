@@ -101,6 +101,13 @@
             key-positions = <18 19>;
             bindings = <&kp RIGHT>;
         };
+
+        combo_enter
+        {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp ENTER>;
+        };
         
 
         
