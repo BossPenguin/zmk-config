@@ -153,16 +153,16 @@
         right_layer
         {
         
-            //  |  F1   |  F2   |  F3   |  F4   |  F5   |    |  F16  |  F17  |  F18  |  F19  | F20   |
-            //  |  F6   |  F7   |  F8   |  F9   |  F10  |    |  F21  |  F22  |  F23  |  F24  | TRANS |
-            //  |  F11  |  F12  |  F13  |  F14  |  F15  |    | TRANS | TRANS | Lgui  | Lalt  | Lctrl |
-            //                          | shift | TG(3) |    | TG(0) | TRANS |
+            //  |  F1   |  F2   |  F3   |  F4   |  F5   |    |  F16  |  F17  |  F18  |  F19  |  F20     |
+            //  |  F6   |  F7   |  F8   |  F9   |  F10  |    |  F21  |  F22  |  F23  |  F24  |  BLClear |
+            //  |  F11  |  F12  |  F13  |  F14  |  F15  |    |  BL1  |  BL2  |  BL3  |  Lalt |  Lctrl   |
+            //                          | shift | TG(3) |    | TG(0) | Lgui |
                 
             bindings = <
-            &kp F1   &kp F2   &kp F3   &kp F4     &kp F5          &kp F16  &kp F17  &kp F18   &kp F19   &kp F20 
-            &kp F6   &kp F7   &kp F8   &kp F9     &kp F10         &kp F21  &kp F22  &kp F23   &kp F24   &trans
-            &kp F11  &kp F12  &kp F13  &kp F14    &kp F15         &trans   &trans   &kp LGUI  &kp LALT  &kp LCTRL
-                                       &kp LSHFT  &tog 3          &tog 0   &trans
+            &kp F1   &kp F2   &kp F3   &kp F4     &kp F5          &kp F16        &kp F17        &kp F18       &kp F19   &kp F20 
+            &kp F6   &kp F7   &kp F8   &kp F9     &kp F10         &kp F21        &kp F22        &kp F23       &kp F24   &bt BT_CLR
+            &kp F11  &kp F12  &kp F13  &kp F14    &kp F15         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &kp LALT  &kp LCTRL
+                                       &kp LSHFT  &tog 3          &tog 0   &kp LGUI
             >;
 
         };  
