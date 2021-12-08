@@ -297,7 +297,7 @@
             bindings = <
             &kp TAB    &kp Q  &kp W  &kp E  &kp R           &kp K         &kp M         &bt BT_SEL 0        &bt BT_SEL 2  &bt BT_SEL 4
             &kp LSHFT  &kp A  &kp S  &kp D  &kp F           &kp J         &kp I         &bt BT_SEL 1        &bt BT_SEL 3  &bt BT_CLR 
-            &kp LCTRL  &kp Z  &kp X  &kp C  &kp V           &kp K         &kp M         &none               &kp F5        &kp F9   
+            &kp LCTRL  &kp Z  &kp X  &kp C  &kp V           &none         &none         &none               &kp F5        &kp F9   
                                      &kp T  &kp SPACE       &none         &tog 3 
             >;
 
