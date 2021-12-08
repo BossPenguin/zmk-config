@@ -177,7 +177,7 @@
             bindings = <&kp NUMBER_7>;
 	    layers = <3>;
         };
-	
+	/*
 	combo_bluetooth_clear
         {
             timeout-ms = <200>;
@@ -225,7 +225,7 @@
             bindings = <&bt BT_SEL 4>;
 	    layers = <2>;
         };
-        
+        */
 
         
     };
@@ -233,7 +233,7 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer
+        default_layer
         {
         
             //  |  Q  |  W  |  F  |   P   |      G     |       |      J      |   L   |      U     |      Y      |   RALT_DEL  |
