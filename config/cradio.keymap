@@ -177,7 +177,7 @@
             bindings = <&kp NUMBER_7>;
 	    layers = <3>;
         };
-	
+	/*
 	combo_bluetooth_clear
         {
             timeout-ms = <200>;
@@ -225,7 +225,7 @@
             bindings = <&bt BT_SEL 4>;
 	    layers = <2>;
         };
-        
+        */
 
         
     };
@@ -295,10 +295,10 @@
             //                    |  T  |  SPACE |          |  F5       |  TG(3)    |
                 
             bindings = <
-            &kp TAB    &kp Q  &kp W  &kp E  &kp R           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-            &kp LSHFT  &kp A  &kp S  &kp D  &kp F           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0 
-            &kp LCTRL  &kp Z  &kp X  &kp C  &kp V           &kp K         &kp M         &kp J         &kp I         &kp F9   
-                                     &kp T  &kp SPACE       &kp F5        &tog 3 
+            &kp TAB    &kp Q  &kp W  &kp E  &kp R           &kp K         &kp M         &bt BT_SEL 0        &bt BT_SEL 2  &bt BT_SEL 4
+            &kp LSHFT  &kp A  &kp S  &kp D  &kp F           &kp J         &kp I         &bt BT_SEL 1        &bt BT_SEL 3  &bt BT_CLR 
+            &kp LCTRL  &kp Z  &kp X  &kp C  &kp V           &kp K         &kp M         &none.              &kp F5        &kp F9   
+                                     &kp T  &kp SPACE       &none         &tog 3 
             >;
 
         };  	
