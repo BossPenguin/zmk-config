@@ -193,7 +193,7 @@
             bindings = <&bt BT_SEL 0>;
 	    layers = <2>;
         };
-	/*
+	
 	combo_bluetooth_1
         {
             timeout-ms = <200>;
@@ -202,7 +202,7 @@
 	    layers = <2>;
         };
 	
-	combo_bluetooth_0
+	combo_bluetooth_2
         {
             timeout-ms = <200>;
             key-positions = <22 23>;
@@ -210,7 +210,7 @@
 	    layers = <2>;
         };
 	
-	combo_bluetooth_0
+	combo_bluetooth_3
         {
             timeout-ms = <200>;
             key-positions = <23 24>;
@@ -218,14 +218,14 @@
 	    layers = <2>;
         };
 	
-	combo_bluetooth_0
+	combo_bluetooth_4
         {
             timeout-ms = <200>;
             key-positions = <24 25>;
             bindings = <&bt BT_SEL 4>;
 	    layers = <2>;
         };
-        */
+        
 
         
     };
