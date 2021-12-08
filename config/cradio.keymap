@@ -177,7 +177,7 @@
             bindings = <&kp NUMBER_7>;
 	    layers = <3>;
         };
-	/*
+	
 	combo_bluetooth_clear
         {
             timeout-ms = <200>;
@@ -185,7 +185,7 @@
             bindings = <&bt BT_CLR>;
 	    layers = <2>;
         };
-	
+	/*
 	combo_bluetooth_0
         {
             timeout-ms = <200>;
