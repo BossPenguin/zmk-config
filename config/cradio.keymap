@@ -20,14 +20,14 @@
         compatible = "zmk,combos";
         combo_esc 
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         
         combo_tab 
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
 	    layers = <0 1 2>;
@@ -35,7 +35,7 @@
         
         combo_vol_plus
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <2 3>;
             bindings = <&kp C_VOL_UP>;
 	    layers = <2>;
@@ -43,7 +43,7 @@
 
         combo_play_pause
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <11 12>;
             bindings = <&kp C_PLAY_PAUSE>;
 	    layers = <2>;
@@ -51,7 +51,7 @@
 
         combo_previous
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <12 13>;
             bindings = <&kp C_PREV>;
 	    layers = <2>;
@@ -59,7 +59,7 @@
 
         combo_next
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <13 14>;
             bindings = <&kp C_NEXT>;
 	    layers = <2>;
@@ -67,7 +67,7 @@
 
         combo_vol_minus
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <22 23>;
             bindings = <&kp C_VOLUME_DOWN>;
 	    layers = <2>;
@@ -75,49 +75,49 @@
 
         // combo_backspace
         // {
-        //     timeout-ms = <200>;
+        //     timeout-ms = <500>;
         //     key-positions = <8 9>;
         //     bindings = <&kp BSPC>;
         // };
 
         combo_up
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <7 8>;
             bindings = <&kp UP>;
         };
 
         combo_down
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <27 28>;
             bindings = <&kp DOWN>;
         };
 
         combo_left
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <16 17>;
             bindings = <&kp LEFT>;
         };
 
         combo_right
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <18 19>;
             bindings = <&kp RIGHT>;
         };
 
         combo_enter
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <17 18>;
             bindings = <&kp ENTER>;
         };
 	
 	combo_trilayer
         {
-            timeout-ms = <200>;
+            timeout-ms = <500>;
             key-positions = <30 31 32 33>;
             bindings = <&tog 3>;
         };
