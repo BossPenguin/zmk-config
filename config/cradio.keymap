@@ -10,8 +10,8 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / { 
@@ -242,7 +242,7 @@
             //                             | TG(1) | LSHFT_BPSC |       | RSHFT_SPACE | TG(2) |
                 
             bindings = <
-            &kp Q        &kp W       &kp F       &kp P  &kp G                  &kp J            &kp L  &kp U           &kp Y            &kp DEL
+            &kp Q        &kp W       &kp F       &kp P  &kp G                  &kp J            &kp L  &kp U           &kp Y            &kp BSPC
             &kp A        &kp R       &kp S       &kp T  &kp D                  &kp H            &kp N  &kp E           &kp I            &kp O
             &mt LCTRL Z  &mt LALT X  &mt LGUI C  &kp V  &kp B                  &kp K            &kp M  &mt RGUI COMMA  &mt RALT PERIOD  &mt RCTRL FSLH
                                      &tog 1      &mt LSHFT BSPC                &mt RSHFT SPACE  &tog 2
