@@ -46,7 +46,7 @@
             timeout-ms = <500>;
             key-positions = <11 12>;
             bindings = <&kp C_PLAY_PAUSE>;
-	    layers = <2>;
+	    layers = <0 2>;
         };
 
         combo_previous
@@ -73,12 +73,12 @@
 	    layers = <2>;
         };
 
-        // combo_backspace
-        // {
-        //     timeout-ms = <500>;
-        //     key-positions = <8 9>;
-        //     bindings = <&kp BSPC>;
-        // };
+        combo_backspace
+        {
+            timeout-ms = <500>;
+            key-positions = <8 9>;
+            bindings = <&kp BSPC>;
+        };
 
         combo_up
         {
@@ -268,13 +268,13 @@
         default_layer
         {
       
-            //  | Q      | W      | F      | P     | G          |       | J           | L     | U     | Y      | DEL   |
+            //  | Q      | W      | F      | P     | G          |       | J           | L     | U     | Y      | SEMI  |
             //  | A      | R      | S      | T     | D          |       | H           | N     | E     | I      | O     |
             //  | LGUI_Z | LGUI_X | LGUI_C | V     | B          |       | K           | M     | COMMA | PERIOD | SLASH |
             //                             | TG(1) | LSHFT_BPSC |       | RSHFT_SPACE | TG(2) |
                 
             bindings = <
-            &kp Q  &kp W  &kp F  &kp P   &kp G                  &kp J      &kp L  &kp U      &kp Y       &kp BSPC
+            &kp Q  &kp W  &kp F  &kp P   &kp G                  &kp J      &kp L  &kp U      &kp Y       &kp SEMI
             &kp A  &kp R  &kp S  &kp T   &kp D                  &kp H      &kp N  &kp E      &kp I       &kp O
             &kp Z  &kp X  &kp C  &kp V   &kp B                  &kp K      &kp M  &kp COMMA  &kp PERIOD  &kp FSLH
                                  &mo 1   &kp LSHFT              &kp SPACE  &mo 2
@@ -286,14 +286,14 @@
         {
             
             //  |  EXCL   |  AT     |  POUND  |  DLLR  | PRCNT |           | CARET | AMPS       | ASTRK | LPAR | RPAR  |
-            //  |  EQUAL  |  PLUS   |  LBKT   |  RBKT  | BSLH  |           | PIPE  | LBRC       | RBRC  | SEMI | COLON |
-            //  |  GRAVE  |  TILDE  |  SQT    |  DQT   | COMMA |           | MINUS | UNDERSCORE | LT    | GT   | QMARK |
+            //  |  EQUAL  |  PLUS   |  LBKT   |  RBKT  | BSLH  |           | PIPE  | LBRC       | RBRC  | SQT  | DQT   |
+            //  |  NONE   |  NONE   |  GRAVE  |  TILDE | COMMA |           | MINUS | UNDERSCORE | LT    | GT   | QMARK |
             //                                |  TG(1) | BPSC  |           | SPACE | NONE       |
                 
             bindings = <
             &kp EXCL   &kp AT     &kp POUND  &kp DLLR    &kp PRCNT         &kp CARET  &kp AMPS        &kp ASTRK  &kp LPAR  &kp RPAR 
-            &kp EQUAL  &kp PLUS   &kp LBKT   &kp RBKT    &kp BSLH          &kp PIPE   &kp LBRC        &kp RBRC   &kp SEMI  &kp COLON 
-            &kp GRAVE  &kp TILDE  &kp SQT    &kp DQT     &kp COMMA         &kp MINUS  &kp UNDERSCORE  &kp LT     &kp GT    &kp QMARK 
+            &kp EQUAL  &kp PLUS   &kp LBKT   &kp RBKT    &kp BSLH          &kp PIPE   &kp LBRC        &kp RBRC   &kp SQT   &kp DQT 
+            &none      &none      &kp GRAVE  &kp TILDE   &kp COMMA         &kp MINUS  &kp UNDERSCORE  &kp LT     &kp GT    &kp QMARK 
                                              &trans      &kp BSPC          &kp SPACE  &none
             >;
 
