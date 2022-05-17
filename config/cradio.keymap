@@ -330,8 +330,8 @@
             //                              |  NONE  |  TRANS  |          |  TRANS  |  NONE    |
                 
             bindings = <
-            &kp ESC    &none     &none     &none   &kp PG_UP       &kp HOME      &kp INSERT    &bt UP        &bt DEL       &bt BSPC
-            &kp TAB    &none     &none     &none   &kp PG_DN       &kp END       &kp LEFT      &bt DOWN      &bt RIGHT     &bt C_PP 
+            &kp ESC    &none     &none     &none   &kp PG_UP       &kp HOME      &kp INSERT    &kp UP        &kp DEL       &kp BSPC
+            &kp TAB    &none     &none     &none   &kp PG_DN       &kp END       &kp LEFT      &kp DOWN      &kp RIGHT     &kp C_PP 
             &sk LCTRL  &sk LALT  &sk LGUI  &kp C   &kp V           &kp C_NEXT    &kp C_PREV    &kp C_VOL_UP  &kp C_VOL_DN  &sk RALT   
                                            &none   &trans          &trans        &none
             >;
