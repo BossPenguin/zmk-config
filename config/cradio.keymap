@@ -121,7 +121,7 @@
         {
             timeout-ms = <500>;
             key-positions = <31 32>;
-            bindings = <&tog 3>;
+            bindings = <&mo 3>;
         };
 	
 	/*
