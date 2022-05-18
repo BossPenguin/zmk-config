@@ -324,15 +324,15 @@
         tri_layer 
         {
         
-            //  |  ESC    |  MBR   |  MUP   |  MBL   |  PG_UP  |          |  HOME   |  INSERT  |  UP     |  DEL    |  BSPC  |
-            //  |  TAB    |  MLF   |  MDN   |  MRT   |  PF_DN  |          |  END    |  LEFT    |  DOWN   |  RIGHT  |  PLAY  |
-            //  |  LCTRL  |  LALT  |  LGUI  |  C     |  V      |          |  NEXT   |  PREV    |  VOLUP  |  VOLDN  |  RALT  |
+            //  |  ESC    |  MBR   |  MUP   |  MBL   |  PG_UP  |          |  HOME   |  INSERT  |  UP     |  DEL    |  BSPC   |
+            //  |  TAB    |  MLF   |  MDN   |  MRT   |  PF_DN  |          |  END    |  LEFT    |  DOWN   |  RIGHT  |  ENTER  |
+            //  |  LCTRL  |  LALT  |  LGUI  |  C     |  V      |          |  NEXT   |  PREV    |  VOLUP  |  VOLDN  |  RALT   |
             //                              |  NONE  |  TRANS  |          |  TRANS  |  NONE    |
                 
             bindings = <
-            &kp ESC    &none     &none     &none   &kp PG_UP       &kp HOME      &kp INSERT    &kp UP        &kp DEL       &kp BSPC
-            &kp TAB    &none     &none     &none   &kp PG_DN       &kp END       &kp LEFT      &kp DOWN      &kp RIGHT     &kp C_PP 
-            &sk LCTRL  &sk LALT  &sk LGUI  &kp C   &kp V           &kp C_NEXT    &kp C_PREV    &kp C_VOL_UP  &kp C_VOL_DN  &sk RALT   
+            &kp ESC    &none     &none     &none   &kp PG_UP       &kp HOME      &kp C_PP      &kp UP        &kp DEL       &kp BSPC
+            &kp TAB    &none     &none     &none   &kp PG_DN       &kp END       &kp LEFT      &kp DOWN      &kp RIGHT     &kp ENTER 
+            &sk LCTRL  &sk LALT  &sk LGUI  &kp C   &kp V           &kp C_PREV    &kp C_NEXT    &kp C_VOL_UP  &kp C_VOL_DN  &sk RALT   
                                            &none   &trans          &trans        &none
             >;
 
